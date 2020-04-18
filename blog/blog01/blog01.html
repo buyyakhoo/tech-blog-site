@@ -8,9 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/tech-blog-site/class/sticky-footer.css">
-    <title>About me</title>
+    <title>Blog</title>
   </head>
   <body>
+    <warpper>
     <header>
         <nav class="navbar navbar-expand-sm bg-dark">
             <div class="container">
@@ -27,36 +28,56 @@
         </nav> 
     </header>
 
-    <div class="container">
-        <h1 class="mt-4">About me</h1>
-        <p class="lead">
-            Latest Updated Apr, 8th 2020
-        </p>
+<!--Content -->
 
-        
-        <p> &nbsp;&nbsp;Hi, my name is <mark> Force</mark>. Now, I'm studying at Grade 10 and I interesting to coding such as <mark>Python, C, JS, HTML etc.</mark> 
-        Technology is the most of interesting for me and I want to do content about technology so, I think technology help the world to comfortable for humanity
-        to create something from creativity inside the brain of human.  (sry to my bad grammar but I'll improve my English)
-        </p>
-        <h3>Inspiration</h3> 
-        <p>&nbsp;&nbsp; Actually, I have inspiration a lot so, I have inspiration from <mark>Watch Dogs</mark> game that I play when my old is 13, <mark>News, Facebook</mark> even <mark>my Brother</mark> that good at coding C language.
-        </p>
-        <h3>Why do I make website?</h3>
-        <p>&nbsp;&nbsp;Because I want to try to make a website. I hope my website give benefit to other's people that interesting technology.</p>
-        <h3>What do I do when I take a break?</h3>
-        <p>&nbsp;&nbsp; Almost, I play video game or watching Youtube, play social media like Twitter, IG, Facebook, Reddit or Quora, play instrument like Piano, Violin, Ukulele. So, if we coding long time, we should go relax, don't we? </p>
-        <h3>Passion</h3>
-        <p>&nbsp;&nbsp;My passion is go to study Computer Science or Computer Engineer in University if possible and like Robot more than software and improve my English because I want to 
-        I think English is important to communicate with Foreigner to go to work. </p>
-        <h3>    </h3>
-        <p>bWFrZSBhIGNvbXBhbnkgYnJvLg==</p>
+    <div class="container">
+      <h1 class="mt-4">Cheatsheet Discord bot that I wrote in Python 3 </h1>
+      <p class="lead">Lastest Updated on Apr, 18 2020 5:18PM</p>
+      <p>&nbsp;&nbsp; Discord is the best for chatting with my friend and make friends, it's comfortable with gaming so, this is some code that I wrote. Let's see this. </p>
+      <h3>@client.event</h3>
+      <ul>
+        <li>on_ready() <br>
+          <code>
+            async def on_ready(): </br>
+            &nbsp;&nbsp; print('Bot is ready.')</code>
+        </li>
+        <li>on_member_join()</br>
+          <code>
+            async def on_member_join(member): </br>
+            &nbsp;&nbsp; print(f'{member} has joined a server.')</code>
+        </li>
+        <li>on_member_remove() </br>
+          <code>
+            async def on_member_remove(member): </br>
+            &nbsp;&nbsp;print(f'{member} has left a server.')</code>
+        </li>
+      </ul>
+      <h3>@client.command()</h3>
+      <ul>
+        <li>add(), sub(), mul(), div() <br>
+          <code>
+            async def add(ctx, a: int, b: int):<br>    
+            &nbsp;&nbsp;await ctx.send(a+b) //you can change to sub, mul or div up to you.
+          </code>
+        </li>
+        <li>help() // you must client.remove_command('help') before type this<br>
+          <code>
+            embed = discord.Embed(title="Help", description="Help the absolute life.", color=0xeee657)<br>
+            &nbsp;&nbsp;embed.add_field(name=".ping", value="show the latency.", inline=False)<br>
+            &nbsp;&nbsp;embed.add_field(name=".ask [Question]", value="Ask question to the bot.", inline=False)<br>
+            &nbsp;&nbsp;await ctx.send(embed=embed)
+          </code>
+        </li>
+      </ul>
+      
     </div>
 
+
     <footer class="footer">
-        <div class="container">
-          <span class="text-muted">&copy; Forzey 2020</span>
-        </div>
-      </footer>
+      <div class="container">
+        <span class="text-muted">&copy; Forzey 2020</span>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
