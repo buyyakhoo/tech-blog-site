@@ -51,6 +51,12 @@
             async def on_member_remove(member): </br>
             &nbsp;&nbsp;print(f'{member} has left a server.')</code>
         </li>
+        <li>on_reaction_add(reaction, user), on_reaction_remove(reaction, user) <br>
+          <code>
+            channel = reaction.message.channel <br>
+            await channel.send(f"{user.name} has added/removed {reaction.emoji} to the message: {reaction.message.content}")
+          </code>
+        </li>
       </ul>
       <h3>@client.command()</h3>
       <ul>
@@ -62,10 +68,11 @@
         </li>
         <li>help() // you must client.remove_command('help') before type this<br>
           <code>
+            channel = ctx.message.channel
             embed = discord.Embed(title="Help", description="Help the absolute life.", color=0xeee657)<br>
             &nbsp;&nbsp;embed.add_field(name=".ping", value="show the latency.", inline=False)<br>
             &nbsp;&nbsp;embed.add_field(name=".ask [Question]", value="Ask question to the bot.", inline=False)<br>
-            &nbsp;&nbsp;await ctx.send(embed=embed)
+            &nbsp;&nbsp;await channel.send(embed=embed)
           </code>
         </li>
       </ul>
