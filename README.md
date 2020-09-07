@@ -1,2 +1,4 @@
 # tech-blog-site
-This is my first Github page repository.
+Hi, it's me. This is my site about tech and repository. 
+
+please go to this link: buyyakhoo.github.io/tech-blog-site
