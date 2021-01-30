@@ -58,11 +58,12 @@
         <p><code>** distance of a side = x2-x1 <br> distance of b side = y2-y1 <br></code>and let a,b,c to do pythagorean formula (a^2 + b^2 = c^2) and
         this is python code that I wrote and this is the output of distance between 2 coordinates. A(2,1), B(1,2)</p>
         <pre class="pre-code rounded">
-            <span style="color: rgb(147, 101, 184);">import</span> <span style="color: rgb(239, 239, 239);">math </span>            
-            <span style="color: rgb(239, 239, 239);">x1, y1 =</span> <span style="color: rgb(247, 218, 100);">eval</span><span style="color: rgb(239, 239, 239);">(</span><span style="color: rgb(247, 218, 100);">input</span><span style="color: rgb(239, 239, 239);">(</span><span style="color: rgb(251, 160, 38);">&quot;x1, y1: &quot;</span><span style="color: rgb(239, 239, 239);">))</span> <span style="color: rgb(255, 255, 255);">#put first coordinates </span>           
-            <span style="color: rgb(239, 239, 239);">x2, y2 =</span> <span style="color: rgb(247, 218, 100);">eval</span><span style="color: rgb(239, 239, 239);">(</span><span style="color: rgb(247, 218, 100);">input</span><span style="color: rgb(239, 239, 239);">(</span><span style="color: rgb(251, 160, 38);">&quot;x2, y2: &quot;</span><span style="color: rgb(239, 239, 239);">))</span> <span style="color: rgb(255, 255, 255);">#put second coordinates</span>            
-            <span style="color: rgb(239, 239, 239);">distance = math.sqrt(((x2-x1)**2) + ((y2-y1)**2))  </span>            
-            <span style="color: rgb(247, 218, 100);">print</span><span style="color: rgb(239, 239, 239);">(</span><span style="color: rgb(84, 172, 210);">f</span><span style="color: rgb(251, 160, 38);">&#39;Distance is</span> <span style="color: rgb(44, 130, 201);">{</span>distance<span style="color: rgb(44, 130, 201);">}</span><span style="color: rgb(251, 160, 38);">&#39;</span><span style="color: rgb(239, 239, 239);">)</span> 
+            <span class="blue">import</span> <span>math</span>
+            <span>x1, y1 = </span><span class="blue">(</span><span class="purple">input</span><span class="blue">(</span><span class="grey">"x1, y1: "</span><span class="blue">))</span>
+            <span>x2, y2 = </span><span class="blue">(</span><span class="purple">input</span><span class="blue">(</span><span class="grey">"x2, y2: "</span><span class="blue">))</span>
+            <span>distance </span><span class="blue">= </span><span>math.sqrt</span><span class="blue">(((</span><span>x2</span><span class="blue">-</span><span>x1</span><span class="blue">**</span><span class="red">2</span><span class="blue">) + ((</span><span>x2</span><span class="blue">-</span><span>x1</span><span class="blue">**</span><span class="red">2</span><span class="blue">))</span>
+            <span class="purple">print</span><span class="blue">(</span><span class="grey">f'Distance is {distance}'</span><span class="blue">)</span>
+
         </pre>
         <p>This is the result that I've run on this python code.</p>
         <pre class="pre-code rounded">
@@ -75,10 +76,10 @@
         <p>&nbsp;&nbsp;Have you ever recited the Multiplication Table when you were child? If yes but you forgot about what are 4 x 5 = ? 
             this Python code is answer, and I'll show you the code. </p>
         <pre class="pre-code rounded" >
-            <span style="color: rgb(239, 239, 239);">num</span> <span style="color: rgb(239, 239, 239);">=</span> <span style="color: rgb(97, 189, 109);">int</span><span style="color: rgb(239, 239, 239);">(</span><span style="color: rgb(247, 218, 100);">input</span><span style="color: rgb(239, 239, 239);">())</span> #put some number to show the multiplication table&nbsp;
-            <span style="color: rgb(125, 178, 221);">for</span><span style="color: rgb(239, 239, 239);">&nbsp;i</span> <span style="color: rgb(125, 178, 221);">in</span><span style="color: rgb(247, 218, 100);">&nbsp;range</span><span style="color: rgb(239, 239, 239);">(</span><span style="color: rgb(97, 189, 109);">12</span><span style="color: rgb(239, 239, 239);">):</span>
-            &nbsp; &nbsp; <span style="color: rgb(239, 239, 239);">i +=</span> <span style="color: rgb(97, 189, 109);">1</span>
-            &nbsp; &nbsp; <span style="color: rgb(247, 218, 100);">print</span>(<span style="color: rgb(84, 172, 210);">f</span><span style="color: rgb(251, 160, 38);">&quot;</span><span style="color: rgb(84, 172, 210);">{</span><span style="color: rgb(239, 239, 239);">num</span><span style="color: rgb(84, 172, 210);">}</span> <span style="color: rgb(251, 160, 38);">x</span> <span style="color: rgb(84, 172, 210);">{</span><span style="color: rgb(239, 239, 239);">i</span><span style="color: rgb(84, 172, 210);">}</span><span style="color: rgb(251, 160, 38);"> =</span> <span style="color: rgb(84, 172, 210);">{</span><span style="color: rgb(239, 239, 239);">num*i</span><span style="color: rgb(84, 172, 210);">}</span><span style="color: rgb(251, 160, 38);">&quot;</span><span style="color: rgb(239, 239, 239);">)</span>  
+            <span>num </span><span class="blue">= </span><span class="purple">int</span><span class="blue">(</span><span class="purple">input</span><span class="blue">())</span>
+            <span class="blue">for </span><span>i </span><span class="blue">in </span><span class="purple">range</span><span class="blue">(</span><span class="red">12</span><span class="blue">):</span>
+                <span>i </span><span class="blue">+= </span><span class="red">1</span>
+                <span class="purple">print</span><span class="blue">(</span><span class="grey">f"{num} x {i} = {num*i}"</span><span class="blue">)</span>
         </pre>
         <p>&nbsp;&nbsp;I'll explain about this code. This code start with integer input on variable num, and then for loop with i variable from 1 to 12
             and then print sentence is result, and the output of this code is like this. </p>

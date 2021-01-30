@@ -1,5 +1,28 @@
 .pre-code {
-    background-color: #32204b; 
-    color: #c9cdd7; 
+    background-color: #ebebeb; 
+    color: #575757; 
     font-size: 16px;
 }
+
+.cyan {
+    color: rgb(0, 174, 255);
+}   
+
+
+.blue {
+    color: blue; 
+}
+
+.purple {
+    color: purple;
+}
+
+.grey {
+    color: grey;
+}
+
+.red {
+    color: red;
+}
+
+
