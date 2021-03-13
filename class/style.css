@@ -1,28 +1,16 @@
 .pre-code {
-    background-color: #ebebeb; 
-    color: #575757; 
+    background-color: #3b3b3b; 
+    color: #c9cdd7;  
     font-size: 16px;
 }
 
-.cyan {
-    color: rgb(0, 174, 255);
-}   
-
-
-.blue {
-    color: blue; 
+.g {
+    color: #6d6d6d
 }
 
-.purple {
-    color: purple;
+* {
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
 }
-
-.grey {
-    color: grey;
-}
-
-.red {
-    color: red;
-}
-
 
