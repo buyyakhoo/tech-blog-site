@@ -14,3 +14,16 @@
     margin: 0;
 }
 
+.cursor { 
+    color:#222; 
+    animation: blink .9s ease infinite;
+    opacity: 0; 
+}
+
+ @keyframes blink {
+    100% { 
+        opacity:1; 
+    }
+ }
+
+
